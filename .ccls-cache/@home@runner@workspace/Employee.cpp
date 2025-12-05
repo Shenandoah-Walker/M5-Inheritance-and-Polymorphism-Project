@@ -44,5 +44,4 @@ void Employee::printEmployee() {
     cout << "Name: " << name << endl;
     cout << "Employee Number: " << employeeNumber << endl;
     cout << "Hire Date: " << hireDate << endl;
-    cout << endl;
 }
