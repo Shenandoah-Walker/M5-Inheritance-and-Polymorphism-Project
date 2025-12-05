@@ -124,7 +124,7 @@ class TeamLeader : public ProductionWorker {
         Postconditions: The team leader's information is printed.
         */
         void printTeamLeader();
-}
+};
 
 
 
