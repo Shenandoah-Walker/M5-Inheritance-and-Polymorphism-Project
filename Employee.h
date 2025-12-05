@@ -39,16 +39,6 @@ public:
     Employee(string name, int employeeNumber , string hireDate);
 
     /*
-    Destructor: ~Employee
-    Purpose: To destroy an Employee object.
-    Parameters: None
-    Returns: None
-    Preconditions: None
-    Postconditions: An Employee object is destroyed.
-    */
-    ~Employee();
-
-    /*
     Accessor: getName
     Purpose: To return the name of the employee.
     Parameters: None

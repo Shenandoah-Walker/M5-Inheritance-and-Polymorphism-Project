@@ -43,16 +43,6 @@ class TeamLeader : public ProductionWorker {
         TeamLeader(string name, int employeeNumber, string hireDate, int shift, double hourlyPayRate, double monthlyBonus, int requiredTrainingHours, int attendedTrainingHours);
 
         /*
-        Destructor: ~TeamLeader
-        Purpose: To destroy a TeamLeader object.
-        Parameters: None
-        Returns: None
-        Preconditions: None
-        Postconditions: A TeamLeader object is destroyed.
-        */
-        ~TeamLeader();
-
-        /*
         Accessor: getMonthlyBonus
         Purpose: To return the monthly bonus of the TeamLeader.
         Parameters: None

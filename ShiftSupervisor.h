@@ -40,16 +40,6 @@ class ShiftSupervisor : public Employee {
         ShiftSupervisor(string name, int employeeNumber, string hireDate, double annualSalary, double annualProductionBonus);
 
         /*
-        Destructor: ~ShiftSupervisor
-        Purpose: To destroy a ShiftSupervisor object.
-        Parameters: None
-        Returns: None
-        Preconditions: None
-        Postconditions: A ShiftSupervisor object is destroyed.
-        */
-        ~ShiftSupervisor();
-
-        /*
         Accessor: getAnnualSalary
         Purpose: To return the annual salary of a shift supervisor.
         Parameters: None

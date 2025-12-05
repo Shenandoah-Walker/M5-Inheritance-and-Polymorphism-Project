@@ -38,16 +38,6 @@ class ProductionWorker : public Employee {
         ProductionWorker(string name, int employeeNumber, string hireDate, int shift, double hourlyPayRate);
 
         /*
-        Destructor: ~ProductionWorker
-        Purpose: To destroy a ProductionWorker object.
-        Parameters: None
-        Returns: None
-        Preconditions: None
-        Postconditions: A ProductionWorker object is destroyed.
-        */
-        ~ProductionWorker();
-
-        /*
         Accessor: getShift
         Purpose: To return the shift of the ProductionWorker.
         Parameters: None
