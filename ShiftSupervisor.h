@@ -100,6 +100,6 @@ class ShiftSupervisor : public Employee {
         Postconditions: The shift supervisor's information is printed.
         */
         void printShiftSupervisor();
-}
+};
 
 #endif
