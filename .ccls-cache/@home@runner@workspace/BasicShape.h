@@ -1,10 +1,3 @@
-/*
-Create an abstract base class called BasicShape that has two private instance variables: area
-(a double), and name (a string). Provide getters and setters for these instance variables. Also
-declare a pure virtual function called calcArea that will be implemented in the classes derived
-from the abstract BasicShape class.
-*/
-
 #ifndef BASICSHAPE_H
 #define BASICSHAPE_H
 #include <iostream>
