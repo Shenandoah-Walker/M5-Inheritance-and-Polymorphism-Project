@@ -58,6 +58,16 @@ class BasicShape {
         Postconditions: The area of the BasicShape is calculated.
         */
         virtual void calcArea() = 0;
+
+        /*
+        Destructor: ~BasicShape
+        Purpose: To destroy the BasicShape object.
+        Parameters: None
+        Returns: None
+        Preconditions: None
+        Postconditions: The BasicShape object is destroyed.
+        */
+        virtual ~BasicShape() = default;
 };
 
 

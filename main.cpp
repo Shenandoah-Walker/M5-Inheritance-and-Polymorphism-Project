@@ -23,5 +23,11 @@ int main() {
         cout << "Shape name: " << shapes[i]->getName() << endl;
         cout << "Area: " << shapes[i]->getArea() << endl;
    }
+
+   //Delete the shapes from memory
+   for (int i = 0; i < 5; i++) {
+        delete shapes[i];
+   }
+  
    return 0;
 }
