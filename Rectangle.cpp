@@ -14,3 +14,11 @@ Rectangle::Rectangle(double length, double width, string name) {
 void Rectangle::calcArea() {
     setArea(length * width);
 }
+
+double Rectangle::getLength() const {
+    return length;
+}
+
+double Rectangle::getWidth() const {
+    return width;
+}

@@ -16,3 +16,16 @@ Circle::Circle(double xCenter, double yCenter, double radius, string name) {
 void Circle::calcArea() {
     setArea(3.14159 * radius * radius);
 }
+
+
+double Circle::getXCenter() const {
+    return xCenter;
+}
+
+double Circle::getYCenter() const {
+    return yCenter;
+}
+
+double Circle::getRadius() const {
+    return radius;
+}

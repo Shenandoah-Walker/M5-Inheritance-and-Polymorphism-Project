@@ -36,6 +36,38 @@ class Circle : public BasicShape {
         */
         void calcArea() override;
 
+        /*
+        Accessor: getXCenter
+        Purpose: To return the xCenter of the Circle.
+        Parameters: None
+        Returns: double
+        Preconditions: None
+        Postconditions: The xCenter of the Circle is returned.
+        */
+        double getXCenter() const;
+
+        /*
+        Accessor: getYCenter
+        Purpose: To return the yCenter of the Circle.
+        Parameters: None
+        Returns: double
+        Preconditions: None
+        Postconditions: The yCenter of the Circle is returned.
+        */
+        double getYCenter() const;
+
+        /*
+        Accessor: getRadius
+        Purpose: To return the radius of the Circle.
+        Parameters: None
+        Returns: double
+        Preconditions: None
+        Postconditions: The radius of the Circle is returned.
+        */
+        double getRadius() const;
+
+
+
 };
 
 

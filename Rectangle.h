@@ -35,5 +35,24 @@ class Rectangle : public BasicShape {
         */
         void calcArea() override;
 
+        /*
+        Accessor: getLength
+        Purpose: To return the length of the Rectangle.
+        Parameters: None
+        Returns: double
+        Preconditions: None
+        Postconditions: The length of the Rectangle is returned.
+        */
+        double getLength() const;
+
+        /*
+        Accessor: getWidth
+        Purpose: To return the width of the Rectangle.
+        Parameters: None
+        Returns: double
+        Preconditions: None
+        Postconditions: The width of the Rectangle is returned.
+        */
+        double getWidth() const;
 };
 #endif
