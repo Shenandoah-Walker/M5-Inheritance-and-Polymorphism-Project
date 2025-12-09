@@ -1,72 +1,27 @@
-//Factory Workers
+//Basic Shapes
 //Test file
-
 #include <iostream>
 #include <string>
-#include "Employee.h"
-#include "ProductionWorker.h"
-#include "TeamLeader.h"
-#include "ShiftSupervisor.h"
+#include "BasicShape.h"
+#include "Circle.h"
+#include "Rectangle.h"
+#include "Square.h"
 
 using namespace std;
 
 int main() {
+    //Create an array of 5 shape pointers: 2 rectangles, 2 circles, and 1 square
+    BasicShape* shapes[5];
+    shapes[0] = new Rectangle(2, 5);
+    shapes[1] = new Rectangle(4, 3, "Rectangle 2");
+    shapes[2] = new Circle(0, 0, 7);
+    shapes[3] = new Circle(0, 0, 14, "Circle 2");
+    shapes[4] = new Square(10);
 
-  //Test the Employee class
-
-  //Object
-  Employee employee1("John Doe", 12345, "01/01/2020");
-  employee1.printEmployee();
-  cout << endl;
-  
-  //Mutators
-  employee1.setName("Jane Doe");
-  employee1.setEmployeeNumber(54321);
-  employee1.setHireDate("02/02/2021");
-  employee1.printEmployee();
-  cout << endl;
-
-
-  //Test the ProductionWorker class
-
-  //First object
-  ProductionWorker worker1("John Smith", 67890, "03/03/2022", 1, 15.00);
-  worker1.printProductionWorker();
-  cout << endl;
-  
-  //Second object
-  ProductionWorker worker2("Alice Johnson", 13579, "02/08/1993", 2, 30.00);
-  worker2.printProductionWorker();
-  cout << endl;
-
-  //Mutators
-  worker1.setShift(2);
-  worker1.setHourlyPayRate(20.00);
-  worker1.printProductionWorker();
-  cout << endl;
-
-  //Test the TeamLeader class
-
-  //Object
-  TeamLeader leader1("Jane Smith", 11111, "04/04/2023", 1, 25.00, 1000.00, 100, 80);
-  leader1.printTeamLeader();
-  cout << endl;
-
-  //Mutators
-  leader1.setMonthlyBonus(1500.00);
-  leader1.setRequiredTrainingHours(120);
-  leader1.setAttendedTrainingHours(100);
-  leader1.printTeamLeader();
-  cout << endl;
-
-  //Test the ShiftSupervisor class
-  ShiftSupervisor supervisor1("Bob Smith", 22222, "05/05/2024", 50000.00, 5000.00);
-   supervisor1.printShiftSupervisor();
-   cout << endl;
-   supervisor1.setAnnualSalary(60000.00);
-   supervisor1.setAnnualProductionBonus(6000.00);
-   supervisor1.printShiftSupervisor();
-   cout << endl;
-
-  return 0;
+    //Loop through the array and print out the name and area of each shape
+   for (int i = 0; i < 5; i++) {
+        cout << "Shape name: " << shapes[i]->getName() << endl;
+        cout << "Area: " << shapes[i]->getArea() << endl;
+   }
+   return 0;
 }
