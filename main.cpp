@@ -13,9 +13,13 @@ using namespace std;
 int main() {
 
   //Test the Employee class
+
+  //Object
   Employee employee1("John Doe", 12345, "01/01/2020");
   employee1.printEmployee();
   cout << endl;
+  
+  //Mutators
   employee1.setName("Jane Doe");
   employee1.setEmployeeNumber(54321);
   employee1.setHireDate("02/02/2021");
@@ -24,18 +28,31 @@ int main() {
 
 
   //Test the ProductionWorker class
+
+  //First object
   ProductionWorker worker1("John Smith", 67890, "03/03/2022", 1, 15.00);
   worker1.printProductionWorker();
   cout << endl;
+  
+  //Second object
+  ProductionWorker worker2("Alice Johnson", 13579, "02/08/1993", 2, 30.00);
+  worker2.printProductionWorker();
+  cout << endl;
+
+  //Mutators
   worker1.setShift(2);
   worker1.setHourlyPayRate(20.00);
   worker1.printProductionWorker();
   cout << endl;
 
   //Test the TeamLeader class
+
+  //Object
   TeamLeader leader1("Jane Smith", 11111, "04/04/2023", 1, 25.00, 1000.00, 100, 80);
   leader1.printTeamLeader();
   cout << endl;
+
+  //Mutators
   leader1.setMonthlyBonus(1500.00);
   leader1.setRequiredTrainingHours(120);
   leader1.setAttendedTrainingHours(100);

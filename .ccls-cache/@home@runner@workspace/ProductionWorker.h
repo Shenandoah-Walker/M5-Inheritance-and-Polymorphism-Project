@@ -1,16 +1,3 @@
-/*Create a class named ProductionWorker that inherits from Employee. This class should
-add:
-- shift (int: 1 for day, 2 for night)
-- hourly pay rate (double)
-• Requirements:
-• Create constructors using constructor initializer lists to initialize the base class.
-• Provide accessor and mutator functions.
-• Add printProductionWorker() that calls printEmployee() and prints additional
-details.
-• Test Data:
-• Create two ProductionWorker objects and display them using
-printProductionWorker()*/
-
 #ifndef PRODUCTIONWORKER_H
 #define PRODUCTIONWORKER_H
 
@@ -49,16 +36,6 @@ class ProductionWorker : public Employee {
         Postconditions: A ProductionWorker object is created with the values passed in.
         */
         ProductionWorker(string name, int employeeNumber, string hireDate, int shift, double hourlyPayRate);
-
-        /*
-        Destructor: ~ProductionWorker
-        Purpose: To destroy a ProductionWorker object.
-        Parameters: None
-        Returns: None
-        Preconditions: None
-        Postconditions: A ProductionWorker object is destroyed.
-        */
-        ~ProductionWorker();
 
         /*
         Accessor: getShift
